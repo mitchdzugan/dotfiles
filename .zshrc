@@ -116,9 +116,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-source "/etc/profile.d/rvm.sh"
-
 export UUID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 export NVIM_LISTEN_ADDRESS="/tmp/$UUID"
 
 export PATH=$PATH:/home/dz/Projects/dz-dev/
+
+export TERM=xterm-256color
